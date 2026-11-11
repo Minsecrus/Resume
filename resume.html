@@ -66,7 +66,59 @@
         </div>
       </section>
 
-      <!-- 02. SELECTED PROJECTS -->
+      <!-- 02. EXPERIENCE -->
+      <section>
+        <div class="section-label">Experience</div>
+        <div class="entries">
+          <!-- Synapsly -->
+          <div>
+            <div class="entry-head">
+              <span class="entry-title">Synapsly Co., Ltd.</span>
+              <span class="entry-meta">Jun 2026 — Present &middot; Remote</span>
+            </div>
+            <div class="entry-sub">Head of Frontend</div>
+            <ul class="entry-bullets">
+              <li>
+                Direct frontend architecture and technical direction across
+                Synapsly web applications, establishing UI component standards,
+                state management guidelines, and design token integration.
+              </li>
+              <li>
+                Designed and engineered <strong>The First Hackathon</strong>
+                event platform in Next.js, featuring a Risograph-inspired visual
+                system, procedural halftone-sphere geometry, and progressive
+                registration flows.
+              </li>
+            </ul>
+          </div>
+
+          <!-- SignalX Research -->
+          <div>
+            <div class="entry-head">
+              <span class="entry-title">SignalX Research</span>
+              <span class="entry-meta">Jul 2026 — Present &middot; Remote</span>
+            </div>
+            <div class="entry-sub">
+              Frontend &amp; Market Data Systems Engineer
+            </div>
+            <ul class="entry-bullets">
+              <li>
+                Built automated market recording pipelines capturing real-time
+                orderbook depth, trade tape, and event streams from decentralized
+                prediction markets (<strong>Polymarket</strong> &amp;
+                <strong>predict.fun</strong>).
+              </li>
+              <li>
+                Architected high-density financial data visualization
+                dashboards, streaming live probability trajectories, liquidity
+                distribution analytics, and market microstructure metrics.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03. SELECTED PROJECTS -->
       <section>
         <div class="section-label">Projects</div>
         <div class="entries">
@@ -90,10 +142,9 @@
                     >Mdr C Tutorial</a
                   >:</strong
                 >
-                Authored a six-track C specification curriculum covering ISO/IEC
-                9899 semantics, the C abstract machine, engineering toolchains,
-                DSA, systems programming, and MCU / RTOS / Linux embedded
-                development.
+                Authored a six-track ISO C specification curriculum covering
+                language semantics, the abstract machine, toolchains, systems
+                programming, and embedded (MCU / RTOS / Linux) development.
               </li>
               <li>
                 <strong
@@ -104,9 +155,8 @@
                     >Mainly.C</a
                   >:</strong
                 >
-                Built an in-browser C/C++ compilation and execution runtime,
-                integrating Clang/LLVM WebAssembly (Wasmer SDK), Monaco Editor,
-                LightningFS, and xterm.js for zero-install client-side
+                Built an in-browser C/C++ compiler and runtime (Clang/LLVM Wasm,
+                Wasmer SDK, Monaco, xterm.js) for zero-install client-side
                 compilation and sandboxed execution.
               </li>
               <li>
@@ -127,8 +177,7 @@
                 >
                 Created zero-dependency interactive visualizers decomposing C23
                 format strings, syntax categories,
-                <code>struct tm</code> mapping, and real-time execution for
-                intuitive systems learning.
+                <code>struct tm</code> mapping, and real-time execution.
               </li>
               <li>
                 <strong
@@ -139,9 +188,9 @@
                     >Mdr in VS Code</a
                   >:</strong
                 >
-                Published a companion VS Code extension automating MinGW-w64
-                provisioning, zero-click save-time diagnostics, and one-click
-                CodeLens <code>-pedantic</code> strict compilation.
+                Published a companion VS Code extension with automated
+                MinGW-w64 provisioning, save-time diagnostics, and one-click
+                strict compilation (<code>-pedantic</code>).
               </li>
               <li>
                 <strong
@@ -154,12 +203,9 @@
                   (<code>&#64;gentorial/core</code>,
                   <code>&#64;gentorial/theme-default</code>):</strong
                 >
-                Created and published a generative documentation framework where
-                authors define strict concept boundaries (<code
-                  >::: concept</code
-                >) while <code>::: generate</code> blocks synthesize
-                personalized explanations and branching Q&A paths via in-memory
-                browser BYOK.
+                Built a generative documentation framework pairing author-defined
+                concept boundaries (<code>::: concept</code>) with in-memory
+                BYOK personalized explanations and branching Q&amp;A.
               </li>
             </ul>
           </div>
@@ -182,26 +228,20 @@
             </div>
             <ul class="entry-bullets">
               <li>
-                Architected an open-source browser IDE blending blueprints, node
-                graphs, animation timelines, and live code around a
-                <strong>Canonical Workspace VFS</strong>
-                (<code>&#64;prodivix/workspace</code>) and versionless
-                <strong>Normalized UI Intermediate Representation (PIR)</strong
-                >.
+                Architected an open-source browser IDE built around a
+                <strong>Workspace VFS</strong> (<code>&#64;prodivix/workspace</code>)
+                and <strong>Normalized UI Intermediate Representation (PIR)</strong>.
               </li>
               <li>
-                Built the domain compiler &amp; codegen pipeline
-                (<code>&#64;prodivix/compiler</code>), DTCG design-token resolver
-                (<code>&#64;prodivix/tokens</code>), React PIR projection renderer,
-                and VS Code PIR debug adapter
-                (<code>&#64;prodivix/vscode-debugger</code>).
+                Engineered the domain compiler and codegen pipeline, DTCG
+                design-token resolver, React PIR projection renderer, and VS
+                Code debug adapter.
               </li>
               <li>
-                Engineered a local-first sync engine using IndexedDB replicas
-                and a <strong>Durable Outbox</strong>, paired with a
-                <strong>Go (Gin) + PostgreSQL</strong> backend implementing
-                single-transaction
-                <strong>Atomic WorkspaceOperation Commits</strong>.
+                Built a local-first sync engine with IndexedDB and a
+                <strong>Durable Outbox</strong>, backed by a
+                <strong>Go (Gin) + PostgreSQL</strong> service for atomic
+                workspace operation commits.
               </li>
             </ul>
           </div>
@@ -225,7 +265,7 @@
                   >
                   &amp; preact-www:</strong
                 >
-                Contributed upstream code improvements shipped in official
+                Contributed upstream improvements shipped in official
                 <strong>Preact v11.2.0 / v11.0.0-rc.0</strong> releases.
               </li>
               <li>
@@ -238,11 +278,10 @@
                   >
                   &amp; MdrSDK:</strong
                 >
-                Spearheaded kernel memory usage optimization for the
-                multi-architecture (<code>ia32 / amd64 / riscv64</code>) OS
-                kernel, and built <code>MdrSDK</code> (userland C library &amp;
-                application SDK powered by <code>xmake</code>,
-                <code>zig cc</code>, and <code>nasm</code>).
+                Optimized kernel memory usage across multi-architecture targets
+                (<code>ia32 / amd64 / riscv64</code>) and built
+                <code>MdrSDK</code> (userland C library powered by
+                <code>xmake</code>, <code>zig cc</code>, and <code>nasm</code>).
               </li>
             </ul>
           </div>
@@ -257,10 +296,9 @@
             </div>
             <ul class="entry-bullets">
               <li>
-                <strong>Academic Monographs:</strong> Engineered an end-to-end
-                LLM-orchestrated academic translation, terminology verification,
-                and double-column LaTeX typesetting pipeline, producing
-                print-grade Chinese editions of
+                <strong>Academic Monographs:</strong> Engineered an
+                LLM-orchestrated translation and LaTeX typesetting pipeline,
+                publishing print-grade Chinese editions of
                 <strong><em>How to Design Programs, 2e</em></strong> and the
                 <strong><em>ACM/IEEE/AAAI CS2023 Curriculum Specification</em></strong>.
               </li>
@@ -273,9 +311,9 @@
                     >FrontFrontier</a
                   >:</strong
                 >
-                Authored a modern frontend learning guide and knowledge base
-                (VitePress), covering core framework internals, frontend
-                architecture design, and creative interactive patterns.
+                Authored an open-source frontend knowledge base and learning
+                roadmap (VitePress), covering framework internals, architecture
+                design, and UI engineering patterns.
               </li>
               <li>
                 <strong
@@ -286,10 +324,9 @@
                     >CS-Course</a
                   >:</strong
                 >
-                Curated a comprehensive computer science curriculum roadmap
-                mapping 10 foundational classics, and authored 2 original
-                16-week syllabi covering hardware/AI systems architecture and
-                reactive UI state engineering.
+                Curated a computer science curriculum mapping 10 foundational
+                classics, alongside 2 original 16-week syllabi on systems
+                evolution and reactive UI engineering.
               </li>
               <li>
                 <strong
@@ -300,14 +337,14 @@
                     >HorizonGraph</a
                   >:</strong
                 >
-                Engineered an interactive CS &amp; AI industry knowledge graph
-                for university students and practitioners, powered by an
-                offline-first Astro and Rust/WASM graph topology engine.
+                Engineered an offline-first CS &amp; AI industry knowledge
+                graph (Astro + Rust/Wasm), mapping multi-tiered technical
+                topologies from hardware to AI infrastructure.
               </li>
               <li>
-                <strong>Technical Series:</strong> Authored open-source research
-                and educational series on bounded software engineering methodology
-                and decision theory (<em>KRCIGE</em>).
+                <strong>Technical Series:</strong> Authored an open-source
+                bounded software engineering and decision theory framework
+                (<em>KRCIGE</em>).
               </li>
             </ul>
           </div>
@@ -336,24 +373,10 @@
                     >HeightFall</a
                   >:</strong
                 >
-                Architected a 3D grid-based MOBA built around real-time terrain
-                height deformation as its core gameplay mechanic; engineered a
-                custom Godot-to-WebGPU client pipeline (.NET 10 / Wasm) running
-                full 3D gameplay, HUD, and C# simulation in the browser.
-              </li>
-              <li>
-                <strong
-                  ><a
-                    href="https://github.com/synapsly-dev"
-                    target="_blank"
-                    rel="noopener"
-                    >The First Hackathon</a
-                  >
-                  (<code>&#64;synapsly-dev</code>):</strong
-                >
-                Designed and engineered the Risograph-inspired visual identity,
-                responsive halftone-sphere procedural geometry, and progressive
-                registration flow in Next.js.
+                Architected a 3D grid-based MOBA featuring real-time terrain
+                height deformation; built a Godot-to-WebGPU client (.NET 10 /
+                Wasm) running 3D gameplay, HUD, and C# logic natively in the
+                browser.
               </li>
               <li>
                 <strong
@@ -364,16 +387,17 @@
                     >Interactive Visualizations</a
                   >:</strong
                 >
-                Built 25+ web sketches spanning Turing machines (<em>Busy Beaver</em>),
-                hyperbolic geometry (<em>PoincareSiege</em>, <em>HemiSweep</em>),
-                and typographic systems (<em>ZenResume</em>).
+                Built 25+ interactive sketches spanning Turing machines
+                (<em>Busy Beaver</em>), hyperbolic geometry
+                (<em>PoincareSiege</em>, <em>HemiSweep</em>), and typographic
+                systems (<em>ZenResume</em>).
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- 03. SKILLS -->
+      <!-- 04. SKILLS -->
       <section>
         <div class="section-label">Skills</div>
         <div class="skills-list">
@@ -388,7 +412,7 @@
           <div class="skill-row">
             <span class="skill-cat">Frontend &amp; Web</span>
             <span class="skill-items"
-              >React, Next.js, Vue 3, Preact, Astro, VitePress, Zustand,
+              >React, Next.js, Svelte, Vue 3, Preact, Astro, VitePress, Zustand,
               Tailwind CSS, Monaco Editor, xterm.js, Design Tokens (DTCG),
               Editorial Typography</span
             >
@@ -396,17 +420,17 @@
           <div class="skill-row">
             <span class="skill-cat">Graphics &amp; Game</span>
             <span class="skill-items"
-              >WebGPU, Godot 4 (.NET), Procedural Canvas / SVG, Shaders (WGSL),
-              Real-time Mesh Deformation, 3D Interactive Web</span
+              >WebGPU, Godot 4 (.NET), Pixi.js, Procedural Canvas / SVG, Shaders
+              (WGSL), 3D Interactive Web</span
             >
           </div>
           <div class="skill-row">
             <span class="skill-cat">Systems &amp; Core</span>
             <span class="skill-items"
-              >Compiler &amp; Normalized IR (PIR), WebAssembly (WASM), Canonical
-              Workspace VFS, Local-First Sync (IndexedDB / Durable Outbox), OS
-              Kernel &amp; Memory (ia32/amd64/riscv64), Go (Gin) + PostgreSQL,
-              VS Code DAP &amp; Extension APIs</span
+              >Compiler &amp; Normalized IR, WebAssembly, VFS, Local-First
+              Sync (IndexedDB / Durable Outbox), OS Kernel &amp; Memory
+              (ia32/amd64/riscv64), Gin, PostgreSQL, VS Code DAP &amp; Extension
+              APIs</span
             >
           </div>
           <div class="skill-row">
