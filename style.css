@@ -26,6 +26,7 @@ html, body {
 }
 
 body {
+  zoom: 1.5;
   padding: 72px 28px 88px;
   display: flex;
   justify-content: center;
@@ -244,6 +245,7 @@ section:last-of-type {
 /* Mobile Responsive */
 @media (max-width: 600px) {
   body {
+    zoom: 1;
     padding: 40px 20px 56px;
   }
   header, section {
@@ -279,6 +281,7 @@ section:last-of-type {
     margin: 12mm 15mm;
   }
   html, body {
+    zoom: 1;
     background: #FFFFFF;
     font-size: 11.5px;
     line-height: 1.48;
