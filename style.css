@@ -278,43 +278,97 @@ section:last-of-type {
 @media print {
   @page {
     size: A4 portrait;
-    margin: 12mm 15mm;
+    margin: 9mm 11mm;
   }
   html, body {
     zoom: 1;
     background: #FFFFFF;
-    font-size: 11.5px;
-    line-height: 1.48;
+    font-size: 9.8px;
+    line-height: 1.35;
     padding: 0;
   }
   main {
     max-width: 100%;
   }
+  header, section {
+    grid-template-columns: 90px 1fr;
+    column-gap: 12px;
+  }
   header {
-    padding-bottom: 14px;
-    margin-bottom: 16px;
+    padding-bottom: 9px;
+    margin-bottom: 9px;
   }
   .avatar {
-    width: 68px;
-    height: 68px;
+    width: 62px;
+    height: 62px;
+    border-radius: 9px;
   }
   h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
-  section {
-    padding-bottom: 14px;
-    margin-bottom: 14px;
+  .subtitle {
+    margin-top: 3px;
+    font-size: 9.8px;
+    gap: 6px;
   }
-  .entries {
+  .links, .contact-links {
+    font-size: 9.2px;
     gap: 12px;
   }
-  .entry-title {
-    font-size: 12.5px;
+  .contact-links {
+    margin-top: 2.5px;
   }
-  .entry-desc, .entry-bullets, .skill-row {
-    font-size: 11.2px;
+  .org-badges {
+    margin-top: 5px;
+    font-size: 9px;
+  }
+  section {
+    padding-bottom: 8px;
+    margin-bottom: 8.5px;
+  }
+  .section-label {
+    font-size: 8.8px;
+    letter-spacing: 0.14em;
+  }
+  .entries {
+    gap: 7px;
+  }
+  .entries > div, .skill-row {
+    break-inside: avoid;
+  }
+  .entry-title {
+    font-size: 10.8px;
+  }
+  .entry-meta {
+    font-size: 9.2px;
+  }
+  .entry-sub {
+    font-size: 9.5px;
+    margin-top: 0.5px;
+  }
+  .entry-desc {
+    margin-top: 3px;
+    font-size: 9.5px;
+    line-height: 1.35;
+  }
+  .entry-bullets {
+    margin-top: 3px;
+    gap: 2px;
+    font-size: 9.5px;
+    line-height: 1.35;
+  }
+  .entry-bullets li {
+    padding-left: 11px;
   }
   .skills-list {
-    gap: 6px;
+    gap: 3px;
+  }
+  .skill-row {
+    grid-template-columns: 100px 1fr;
+    column-gap: 10px;
+    font-size: 9.3px;
+  }
+  .skill-items {
+    line-height: 1.33;
   }
 }
