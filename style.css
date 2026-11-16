@@ -1,8 +1,10 @@
+@charset "UTF-8";
+
 :root {
   --bg: #FBFBF9;
   --ink: #141413;
-  --body: #4E4E4A;
-  --muted: #8C8C86;
+  --body: #333330;
+  --muted: #666661;
   --line: #E8E7E1;
   --code-bg: #F2F1EC;
 }
@@ -76,21 +78,16 @@ h1 {
   margin-top: 8px;
   font-size: 13.5px;
   color: var(--body);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 12px;
 }
 
-.contact-links {
+.links {
   grid-column: 2;
-  margin-top: 6px;
-  font-size: 13px;
-  color: var(--muted);
+  margin-top: 5px;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 4px 16px;
+  font-size: 13px;
+  color: var(--muted);
 }
 
 .org-badges {
@@ -99,14 +96,6 @@ h1 {
   font-size: 12px;
   color: var(--muted);
   letter-spacing: 0.02em;
-}
-
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  font-size: 13px;
-  color: var(--muted);
 }
 
 a {
@@ -212,7 +201,7 @@ section:last-of-type {
 }
 
 .entry-bullets li::before {
-  content: "–";
+  content: "\2013";
   position: absolute;
   left: 0;
   color: var(--muted);
@@ -248,21 +237,32 @@ section:last-of-type {
     zoom: 1;
     padding: 40px 20px 56px;
   }
-  header, section {
+  header {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  section {
     grid-template-columns: 1fr;
     gap: 12px;
   }
   .avatar-wrap {
     grid-column: 1;
     grid-row: auto;
-    margin-bottom: 4px;
+    margin-bottom: 14px;
   }
   .avatar {
     width: 76px;
     height: 76px;
   }
-  h1, .subtitle, .contact-links, .org-badges {
+  h1, .subtitle, .links, .org-badges {
     grid-column: 1;
+  }
+  .subtitle {
+    line-height: 1.48;
+  }
+  .org-badges {
+    margin-top: 12px;
+    line-height: 1.5;
   }
   .entry-head {
     flex-direction: column;
@@ -276,6 +276,10 @@ section:last-of-type {
 
 /* Print / Single-Page A4 Optimization */
 @media print {
+  :root {
+    --body: #2A2A27;
+    --muted: #575753;
+  }
   @page {
     size: A4 portrait;
     margin: 9mm 11mm;
@@ -309,14 +313,11 @@ section:last-of-type {
   .subtitle {
     margin-top: 3px;
     font-size: 9.8px;
-    gap: 6px;
   }
-  .links, .contact-links {
-    font-size: 9.2px;
-    gap: 12px;
-  }
-  .contact-links {
+  .links {
     margin-top: 2.5px;
+    font-size: 9.2px;
+    gap: 3px 12px;
   }
   .org-badges {
     margin-top: 5px;
